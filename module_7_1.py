@@ -12,9 +12,9 @@ class Shop:
     __file_name = 'products.txt'
     def get_products(self):
         file = open(self.__file_name, 'r')
-        file.read()
+        file1 = file.read()
         file.close()
-
+        return file1
     def add(self, *products):
         current_products = self.get_products()
 
